@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0 auto;
+	max-width:650px;
+	font-family:"Microsoft YaHei"
+}
+.wrap{
+	padding:3% 0 0 3%;
+	}
+.square{
+	float:left;
+	padding:30% 0 0 0;
+	margin:0 3% 3% 0;
+	width:30%;
+	background:orange;
+	border-radius:10px;
+}
+button{
+	width:calc(97% - 4px);
+	margin-bottom:20px;
+	padding:0;
+	height:60px;
+	background:white;
+	border:2px solid orange;
+	outline:none;
+	border-radius:10px;
+	font-size:25px;
+	color:orange;
+}
+button:hover{
+	background-color:orange;
+	color:white;
+	cursor:pointer;
+}
