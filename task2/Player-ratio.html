@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="style/reset.css" >
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css?ver=58" >
+    <link rel="stylesheet" href="style/Player-ratio.css" >
+    <title>玩家配比</title>
+</head>
+<body>
+<header>
+    <div class="header-top">
+            <div class="back"></div>
+            <div class="parameter-set">参数设置</div>
+            <div class="help"></div>
+    </div>
+</header>
+<main>
+    <div class="container ">
+        <div class="row">
+            <div class="player-box clear-fix">
+                <div class="col-xs-2 distribute ">玩家配比</div>
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="player-top clear-fix" id="player-top" onchange="numChange"></div>
+                        <div class="col-xs-12 set ">
+                            <span>点击设置</span>
+                            <div class="pencil"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="word-group">
+                <div class="line">水民词组</div>
+                <div class="line">幽灵词组</div>
+            </div>
+            <div class="word-group player">
+                玩家人数
+                <input type="number" class="player-num" id="player" value="6" max="18" min="6" onblur="onChange()">
+                人
+                <div class="slider">
+                    <button id="btn-sub" class="btn" onclick="less()"></button>
+                    <input type="range" id="slider" min="6" max="18" step="1" value="6" onchange="moveChange()">
+                    <button id="btn-add" class="btn" onclick="plus()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-deal" id="btnDeal" onclick="deal()">去发牌</button>
+</main>
+<script src="script/player-ratio.js"></script>
+<script src="script/task2-1.js"></script>
+</body>
+</html>
