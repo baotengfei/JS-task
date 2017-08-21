@@ -51,7 +51,9 @@ $(".set").click(function () {
             $("#player-top").append('<li class="player-all man"><div class="point-killer"></div>' + (k + 1) + '号'+total[k] + '</li>');
         }
     }
-    // thePlayers = JSON.stringify(total);
+    // thePlayers = J
+    //
+    // SON.stringify(total);
     // sessionStorage.total = thePlayers;
     // dates = JSON.stringify(theDates);
     // sessionStorage.dates = dates;

@@ -50,7 +50,7 @@ body{
 
 /*header*/
 header{
-  height:.75rem;
+  height:8vh;
   background-color:#29bde0;
 
 }
@@ -59,7 +59,9 @@ header{
   .flex;
   padding:0 .2rem;
 }
-
+button{
+  border:none;
+}
 .back{
   width:.3rem;
   height:.45rem;
@@ -74,30 +76,31 @@ header{
 }
 .parameter-set{
   display: block;
-  line-height:.75rem;
+  line-height:8vh;
   font-size:.34rem;
   color:white;
 }
 
 
-/*main*/
+
 main{
   background-color:#f0f0f0;
+  height:92vh;
+}
+.border{
   padding:.2rem;
 }
-.player-box{
 
-}
 .distribute{
   .center;
-  height:4.5rem;
+  height:50vh;
   font-size:.34rem;
   background-color:white;
   writing-mode:vertical-lr;
   border-right:1px solid #d9d9d9;
 }
 .player-top {
-  height:3.9rem;
+  height:43vh;
   background-color: #fbfbfb;
   padding-top:.45rem;
   padding-left:.5rem;
@@ -127,7 +130,7 @@ li{
 .set{
   text-align:center;
   font-size:.28rem;
-  line-height:.59rem;
+  line-height:7vh;
   color:#29bde0;
   background-color: #fbfbfb;
   border-top:1px solid #d9d9d9;
@@ -193,7 +196,6 @@ input[type="range"]::-webkit-slider-thumb{
   width:.28rem;
   height:.28rem;
   padding:0;
-  //background-size:contain;
   outline:none!important;
   border:2px solid #d9d9d9;
 }
@@ -206,9 +208,10 @@ input[type="range"]::-webkit-slider-thumb{
 
 
 .btn-deal{
+  position: relative;
+  top:3vh;
   height:.88rem;
   width:100%;
-  margin-top:.2rem;
   background-color:#fab344;
   color:white;
   font-size:.4rem;
@@ -229,28 +232,72 @@ input[type="range"]::-webkit-slider-thumb{
   position: relative;
   width:4.62rem;
   height:6.62rem;
-  margin:.65rem auto 0 auto;
+  margin:.75rem auto 0 auto;
   background-color:#ffedc5;
   border:6px solid white;
-  .center;
+  text-align: center;
   .card-back{
+    display: block;
     width:3rem;
     height:3rem;
+    margin:1.75rem auto;
   }
-  .no-3{
+  .card-above{
+    margin:.55rem auto 0 auto;
+    width:2.2rem;
+    height:2.2rem;
+    display: none;
+
+  }
+  .role{
+    display: block;
+    font-size:.4rem;
+    color:#29bde0;
+    margin:.35rem auto .15rem auto;
+  }
+  .words{
+    display: block;
+    padding-bottom:.3rem;
+    margin:0;
+    font-size:.4rem;
+    color:#f56b81;
+    border-bottom:2px solid white;
+  }
+  .tips{
+    display: block;
+    margin:.3rem .2rem 0 .2rem;
+    font-size:.26rem;
+    color:#fca000;
+    text-align: left;
+  }
+  .num{
     position:absolute;
+    left:50%;
+    transform: translateX(-50%);
     top:-.36rem;
-    width:.73rem;
-    height:.73rem;
+    width:.74rem;
+    height:.74rem;
+    background: url(../images/num.png) center no-repeat;
+    background-size: contain;
+    .center;
+    span{
+      font-size:.4rem;
+      color:#f56b81;
+    }
   }
 }
+
+/*查看身份*/
 .background{
   background-color:#29bde0;
   border-top:1px solid #74d4eb;
+  text-align: center;
 }
 .check-out{
   display:block;
-  margin:1.23rem auto .4rem auto;
+  position: relative;
+  bottom:-5vh;
+  margin:0 auto;
   width:4.9rem;
   height:.84rem;
   background-color:#fbb435;
@@ -258,4 +305,51 @@ input[type="range"]::-webkit-slider-thumb{
   color:white;
   outline:none;
   border:none;
+}
+
+
+
+/*法官日记*/
+.box{
+  padding:.74rem .34rem 0 .34rem;
+  height:70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.box-player{
+  position: relative;
+  margin:0 auto .74rem auto;
+  width:1.36rem;
+  height:1.36rem;
+  border:.05rem solid white;
+  background: url(../images/box.png) center;
+  background-size:contain;
+  cursor:pointer;
+  &:hover .box-cover{
+    opacity:1;
+  }
+}
+.box-top{
+  height:.96rem;
+  background:url(../images/logo.png) center no-repeat;
+  background-size:.77rem;
+}
+.box-cover{
+  position: absolute;
+  top:0;
+  height:.96rem;
+  width:1.26rem;
+  background:#f5c97b;
+  line-height:.96rem;
+  text-align: center;
+  font-size:.35rem;
+  opacity:0;
+}
+.box-bottom{
+  height:.3rem;
+  background-color:rgba(41,154,180,.7);
+  line-height:.3rem;
+  text-align: center;
+  color:white;
+  font-size:.23rem;
 }

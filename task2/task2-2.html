@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="style/reset.css" >
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css?ver=58" >
-    <link rel="stylesheet" href="style/Player-ratio.css" >
+    <link rel="stylesheet" href="style/task2-2.css" >
     <title>玩家配比</title>
 </head>
 <body>
 <header>
     <div class="header-top">
-            <div class="back"></div>
+            <button class="back" onclick="history.go(-1)"></button>
             <div class="parameter-set">参数设置</div>
             <div class="help"></div>
     </div>
 </header>
-<main>
+<main class="border">
     <div class="container ">
         <div class="row">
             <div class="player-box clear-fix">
@@ -50,9 +50,9 @@
             </div>
         </div>
     </div>
-    <button class="btn-deal" id="btnDeal" onclick="deal()">去发牌</button>
+    <button class="btn-deal" id="btnDeal">去发牌</button><!-- onclick="deal()"-->
 </main>
-<script src="script/player-ratio.js"></script>
 <script src="script/task2-1.js"></script>
+<script src="script/task2-2.js"></script>
 </body>
 </html>
