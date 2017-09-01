@@ -4,11 +4,13 @@ var player=JSON.parse(sessionStorage.getItem("player"));
 var theDays=JSON.parse(sessionStorage.getItem("days"));
 var killArray = JSON.parse(sessionStorage.getItem("killArray"));
 var voteArray = JSON.parse(sessionStorage.getItem("voteArray"));
+var theDay = JSON.parse(sessionStorage.n);
 var n=0;
 var m=0;
 console.log(aliveMan);
 console.log(aliveKiller);
 console.log(player);
+console.log(theDay);
 if(aliveKiller==0){
     $(".victory").text("平民胜利");
 }else if(aliveKiller>=aliveMan){
@@ -29,8 +31,13 @@ for(var i=0;i<player.length;i++){
 }
 $(".people").eq(0).text("平民"+m+"人");
 $(".people").eq(1).text("杀手"+n+"人");
-
-for (var i=0;i<theDays;i++){
+if (theDay==1){
+    x=theDays;
+}else if(theDay==0){
+    x=theDays-1;
+}
+console.log(x);
+for (var i=0;i<x;i++){
     var days=$("<div>").addClass("days clear-fix");
     var firstDay=$("<span>").addClass("first-day");
     var time=$("<span>").addClass("time");

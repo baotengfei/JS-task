@@ -442,11 +442,41 @@ footer {
   width: .36rem;
   height: .36rem;
 }
-.restart {
+.restart-share {
+  position: relative;
   width: 45%;
-  height: .7rem;
-  background-color: orange;
+  height: 100%;
+  border-radius: 10px;
   font-size: .4rem;
+  color: white;
+  border: none;
+}
+.restart {
+  float: left;
+  background-color: #f66f6f;
+  position: relative;
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: .4rem;
+  color: white;
+  border: none;
+}
+.share {
+  float: right;
+  background-color: #fbb435;
+  position: relative;
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: .4rem;
+  color: white;
+  border: none;
+}
+.res {
+  padding: .24rem;
+  height: 1.28rem;
+  background: rgba(41, 189, 224, 0.5);
 }
 .day-night {
   text-align: center;

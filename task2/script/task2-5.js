@@ -51,7 +51,7 @@ var n = JSON.parse(sessionStorage.n);
 
 kill = kill + n;
 console.log(kill);
-$(".check-out").click(function () {
+$(".restart").click(function () {
     var restart=confirm("本次游戏将退出，确定？");
     if (restart==true){
         location.href = "task2-1.html";
