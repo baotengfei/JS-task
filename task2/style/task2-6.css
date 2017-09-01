@@ -1,0 +1,234 @@
+@media screen and (min-width:0px){
+    html{
+        font-size:250%;
+    }
+}
+@media screen and (min-width:320px){
+    html{
+        font-size:315%;
+    }
+}
+@media screen and (min-width:360px){
+    html{
+        font-size:353%;
+    }
+}
+@media screen and (min-width:375px){
+    html{
+        font-size:368%;
+    }
+}
+@media screen and (min-width:412px){
+    html{
+        font-size:402%;
+    }
+}
+@media screen and (min-width:414px){
+    html{
+        font-size:410%;
+    }
+}
+@media screen and (min-width:640px){
+    html{
+        font-size:625%;
+    }
+}
+
+html{
+    height:100%;
+    background-color:white;
+}
+body{
+    position: relative;
+    width:6.4rem;
+    height:100%;
+    max-width:640px;
+    margin:0 auto;
+    overflow-x:hidden;
+    background-color:#29bde0
+}
+header{
+    position: relative;
+    height:.83rem;
+    background-color:#29bde0;
+    text-align: center;
+}
+.title{
+    position: relative;
+    font-size:.34rem;
+    top:.2rem;
+    color:white;
+    text-align:center;
+}
+.option{
+    position: relative;
+    float:left;
+    top:.2rem;
+    margin-left:.2rem;
+    background:url(../images/option-second.png) center no-repeat;
+    height:.4rem;
+    width:.4rem;
+    background-size:.3rem .3rem;
+}
+.close-right{
+    position: relative;
+    float:right;
+    margin-right:.2rem;
+    top:.2rem;
+    background:url(../images/close.png) center no-repeat;
+    height:.4rem;
+    width:.4rem;
+    background-size:.3rem .3rem;
+}
+main{
+    padding-bottom:1.9rem;
+    background-color:#29bde0;
+}
+.line{
+    /*position: relative;*/
+    height:.83rem;
+    padding:0 .18rem 0 .46rem;
+    width:100%;
+    background-color:#b9e9f5;
+}
+.tips{
+    position: relative;
+    float:left;
+    font-size:.26rem;
+    top:50%;
+    margin:-.2rem 0;
+
+}
+.sound{
+    position: relative;
+    float:right;
+    top:50%;
+    margin:-.2rem 0;
+    width:.4rem;
+    height:.4rem;
+    background:url(../images/sound.png) center no-repeat;
+    background-size:.4rem .4rem;
+    /*cursor:pointer;*/
+}
+
+audio{
+    opacity:0;
+}
+.triangle{
+    width: 0;
+    height:0;
+    border-top:.1rem solid #b9e9f5;
+    border-left:.1rem solid transparent;
+    border-right:.1rem solid transparent;
+    margin-left:.71rem;
+}
+.tips-second{
+    margin-left:.71rem;
+    line-height:.8rem;
+    font-size:.24rem;
+    color:#f2fbfd;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    height:1.9rem;
+    width:6.4rem;
+    max-width: 640px;
+    background-color:#29bde0;
+    z-index: 1;
+}
+a:link{
+    text-decoration:none;
+}
+.confirm{
+    position: relative;
+    height:.86rem;
+    width:4.9rem;
+    margin:0 auto;
+    top:.42rem;
+    background-color: #fbb435;
+    text-align:center;
+    display:block;
+    border:none;
+    color:white;
+    font-size:.4rem;
+}
+.pad{
+    width:1.36rem;
+    margin:0 auto;
+}
+.box{
+    position: relative;
+    border:.04rem solid white;
+    background-color:#f5c97b;
+    cursor:pointer;
+}
+.box-top{
+    width:1.28rem;
+    height:.99rem;
+    text-align:center;
+    display:table;
+}
+.player{
+    font-size:.3rem;;
+    display:table-cell;
+    vertical-align:middle;
+}
+.box-bottom{
+    height:.27rem;
+    width:100%;
+    background-color:#83b09a;
+    text-align:center;
+    display:table;
+}
+.num{
+    color:white;
+    font-size:.23rem;
+    display:table-cell;
+    vertical-align:middle;
+}
+.shape{
+    width:.3rem;
+    height:.3rem;
+    margin:.19rem auto;
+    opacity:0;
+}
+
+span{
+    width:.3rem;
+    height:.3rem;
+    background:url(../images/sprites.png) center no-repeat;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.shape-one{
+    margin-right:.03rem;
+    background-position:0 0;
+    /*background-size:auto 400%;*/
+}
+.shape-two{
+    margin-right:.03rem;
+    background-position:0 33%;
+    /*background-size:auto 400%;*/
+}
+.shape-three{
+    margin-right:.03rem;
+    background-position:0 67%;
+    /*background-size:auto 400%;*/
+}
+.shape-four{
+    background-position:0 100%;
+    /*background-size:auto 400%;*/
+}
+.pad:hover .shape{
+    opacity:1;
+}
+.container{
+    width:6.4rem;
+    max-width:768px;
+}
+.col-md-4{
+    width:33.33333333333%;
+}
+

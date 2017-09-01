@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="style/reset.css" >
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css?ver=58" >
+    <link rel="stylesheet" href="style/task2-2.css" >
+    <title>法官日记</title>
+</head>
+<body id="judge">
+<header>
+    <div class="header-top">
+        <button class="back" onclick="history.go(-1)"></button>
+        <div class="parameter-set">法官日记</div>
+        <div class="close-right"></div>
+    </div>
+</header>
+<main class="judge clear-fix">
+    <div class="the-day">
+        <img src="images/down.png" alt="" class="down"><span id="days"></span>
+    </div>
+    <!--<div class="day-night">
+        <p>晚上：号被杀手杀死，真实身份是</p>
+        <p>白天：号被投票投死，真实身份是</p>
+    </div>-->
+    <div class="details">
+        <div class="details-line kill">
+            <div class="moon">
+                <img src="images/moon.png" alt="">
+            </div>
+            <div class="triangle"></div>
+            <span>杀手杀人</span>
+        </div>
+        <div class="message"></div>
+        <div class="details-line last-words">
+            <div class="sun">
+                <img src="images/sun.png" alt="">
+            </div>
+            <div class="triangle"></div>
+            <span>亡灵发表遗言</span>
+        </div>
+        <div class="details-line speak">
+            <div class="triangle"></div>
+            <span>玩家依次发言</span>
+        </div>
+        <div class="details-line vote">
+            <div class="triangle"></div>
+            <span>投票</span>
+        </div>
+        <div class="message2"></div>
+    </div>
+</main>
+<footer>
+    <button class="check-out">重新开始</button>
+</footer>
+<script src="script/task2-5.js"></script>
+<!--<script src="script/task2-6.js"></script>-->
+</body>
+</html>
